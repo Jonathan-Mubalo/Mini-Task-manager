@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:root {
+  --myblack: rgb(17, 17, 17);
+  --mylimegreen: rgb(139, 241, 71);
+  --myBlackGrey: rgb(51, 49, 49);
+  --myDarkGrey: rgb(80, 73, 73);
+  --myRed:  rgb(204, 23, 23);
+}
+
+body {
+  background-color: var(--myblack);
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 300px;
+  width: 30%;
+  margin: 5% auto;
+  border-radius: 15px;
+  height: auto;
+  align-items: center;
+}
+
+header h1 {
+  margin: 4px;
+}
+
+header input {
+  margin: 1px 4px;
+  background-color: var(--myDarkGrey);
+  color: white;
+  border-radius: 15px;
+  padding: 5px 8px;
+}
+
+header input::placeholder {
+  color: rgb(255, 255, 255, 0.65);
+}
+
+header button {
+  margin: 4px;
+  background-color: var(--mylimegreen);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 50%;
+  width: 100%;
+  background-color: var(--myblack);
+  margin-top: 4%;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main h1 {
+  color: var(--mylimegreen);
+}
+
+main div {
+  width: 30%;
+  min-width: 300px;
+  height: 300px;
+  max-height: 450px;
+  border: 2px solid var(--mylimegreen);
+  border-radius: 15px;
+  background-color: var(--myBlackGrey);
+  overflow-y: scroll;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
+details::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  margin: 2% auto;
+  text-align: center;
+  /* border: 2px solid midnightblue; */
+  border-radius: 15px;
+  background-color: var(--myblack);
+  width: 60%;
+  min-height: 70px;
+  height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: block;
+  /* flex-flow: column nowrap; */
+  align-items: center;
+  user-select: none;
+  /* position:relative; */
+}
+
+/* h1{
+  margin-top: 20px;
+  font-size: 1.45rem;
+  text-decoration: none; */
+/* text-decoration: underline; */
+/* } */
+
+section article {
+  color: rgb(144, 149, 153);
+  font-size: 1.25rem;
+  margin: 15px auto 0px;
+  cursor: pointer;
+  height: auto;
+  width: 80%;
+  /* border: 1px solid rgb(0, 47, 255); */
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+section button,
+section h3,
+section h2,
+section h6,
+section h4 {
+  margin: 8px auto;
+  font-size: 14px;
+  background-color: var(--mylimegreen);
+  border-radius: 12px;
+  font-weight: bold;
+  color: black;
+  padding: 5px 6px;
+  width: 80%;
+  height: 35px;
+  cursor: pointer;
+}
+
+section h5 {
+  margin: 8px auto;
+  font-size: 14px;
+  background-color: var(--myRed);
+  border-radius: 12px;
+  font-weight: bold;
+  color: black;
+  padding: 5px 6px;
+  width: 80%;
+  height: 35px;
+  cursor: pointer;
+}
+
+section article input {
+  font-size: 14px;
+  background-color: var(--mylimegreen);
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+  margin: 1px 0px;
+  background-color: var(--myDarkGrey);
+  color: white;
+  text-align: center;
+}
+
+section article input::placeholder {
+  color: rgb(255, 255, 255, 0.65);
+  text-align: center;
+}
+
+/* THE STYLING FOR BUTTONS THAT EDIT TASKS */
+
+section p {
+  display: none;
+}
+
+/* section button {
+  margin: 4px;
+  background-color: var(--mylimegreen);
+  padding: 5px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: larger;
+} */
+
+.checked {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+.viewCard {
+  height: auto;
+  width: 95%;
+}
+
+/* HELLO */
