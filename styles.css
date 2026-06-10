@@ -128,7 +128,6 @@ section article {
   cursor: pointer;
   height: auto;
   width: 80%;
-  /* border: 1px solid rgb(0, 47, 255); */
 }
 
 section::-webkit-scrollbar {
@@ -204,8 +203,13 @@ section p {
 }
 
 .viewCard {
+  position:fixed;
+  bottom: 50px;
+  left: 20%;
+  right:20%;
   height: auto;
-  width: 95%;
+  width: 60%;
+  opacity:1;
 }
 
 /* HELLO */
