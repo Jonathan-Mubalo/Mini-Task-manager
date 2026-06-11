@@ -9,8 +9,8 @@ const body = document.querySelector("body")
 //  MY ARRAY TO DISPLAY IN ANY CONTAINER THAT IS MADE
 
 
-let boilerplate = ["<button>Finish Editting</button>", "<h2>Mark as Done</h2>", "<h5>Delete Task</h5>"];
-//  "<h6>Move to To-Do</h6>", "<h3>Move to Doing</h3>", "<h4>Move to Done</h4>",
+let boilerplate = [ "<h3>Finish Editting</h3>", "<h2>Mark as Done</h2>", "<h5>Delete Task</h5>"];
+//   "<h6>Move to To-Do</h6>", "<h3>Move to Doing</h3>", "<h4>Move to Done</h4>",
 
 // "<h5>Edit task</h5>",
 //FUNCTION USED TO CREATE A TASK CARD AND ADD IT TO THE TODO DIV
@@ -30,8 +30,8 @@ createBtn.addEventListener("click", () => {
     mySectionCard.draggable ="true";
     parseInt(myIdCount);
     myIdCount++;
-    cardTitle.innerHTML = addTaskInput.value + "<br><br><br>";
-    cardTitle.contentEditable ="true";
+    cardTitle.innerHTML = addTaskInput.value + "<br><br></br>";
+    // cardTitle.contentEditable ="true";
     cardTitle.appendChild(editTaskSpan);
     addTaskInput.value = "";
     mySectionCard.appendChild(cardTitle);
@@ -185,7 +185,7 @@ myMain.addEventListener("change", (action) => {
 //     }
 // })
 
-// MARKING A TASKAS DONE AND UNDONE
+// MARKING A TASK AS DONE AND UNDONE
 
 myMain.addEventListener("click", (action) => {
     if (action.target.tagName === "H2") {
