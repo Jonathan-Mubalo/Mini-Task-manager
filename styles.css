@@ -71,9 +71,6 @@ main {
 
 main h1 {
   text-align: center;
-}
-
-main h1 {
   color: var(--mylimegreen);
 }
 
@@ -87,6 +84,16 @@ main div {
   background-color: var(--myBlackGrey);
   overflow-y: scroll;
   margin-top: 5px;
+}
+
+#to-do, #doing, #done{
+  width:100%;
+  min-height: 250px;
+  height:auto;
+  margin:0%;
+  padding:0%;
+  border: none;
+  overflow-y: none;
 }
 
 div::-webkit-scrollbar {
@@ -104,8 +111,8 @@ section {
   border-radius: 15px;
   background-color: var(--myblack);
   width: 60%;
-  min-height: 70px;
-  height: 20px;
+  /* min-height: 70px; */
+  height: 70px;
   overflow-x: hidden;
   overflow-y: hidden;
   display: block;
@@ -113,6 +120,7 @@ section {
   align-items: center;
   user-select: none;
   /* position:relative; */
+  opacity:0.99;
 }
 
 /* h1{
@@ -213,6 +221,8 @@ section p {
   opacity:1;
 }
 
+/* media queries */
+
 @media screen and (max-width:650px){
 
   main div {
@@ -223,7 +233,7 @@ section p {
   border: 2px solid var(--mylimegreen);
   border-radius: 15px;
   background-color: var(--myBlackGrey);
-  overflow-y: scroll;
+  overflow-y: none;
 }
 
 section {

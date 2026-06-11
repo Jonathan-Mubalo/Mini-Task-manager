@@ -4,12 +4,12 @@ const toDo = document.getElementById("to-do");
 const doing = document.getElementById("doing");
 const done = document.getElementById("done");
 const myMain = document.querySelector("main");
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 
 //  MY ARRAY TO DISPLAY IN ANY CONTAINER THAT IS MADE
 
 
-let boilerplate = [ "<h3>Finish Editting</h3>", "<h2>Mark as Done</h2>", "<h5>Delete Task</h5>"];
+let boilerplate = ["<h3>Finish Editting</h3>", "<h2>Mark as Done</h2>", "<h5>Delete Task</h5>"];
 //   "<h6>Move to To-Do</h6>", "<h3>Move to Doing</h3>", "<h4>Move to Done</h4>",
 
 // "<h5>Edit task</h5>",
@@ -25,6 +25,8 @@ createBtn.addEventListener("click", () => {
     let mySectionCard = document.createElement("section");
     let cardTitle = document.createElement("article");
     let editTaskSpan = document.createElement("input");
+    // let myActualTasksContainer = document.createElement("ul");
+    // let myCreateInput = document.createElement("input");
     editTaskSpan.placeholder = "Click To Edit Task";
     mySectionCard.id = "a"+myIdCount;
     mySectionCard.draggable ="true";
@@ -145,7 +147,7 @@ myMain.addEventListener("change", (action) => {
 //         let mySectionCard = document.createElement("section");
 //         console.log(action.target)
 //         mySectionCard.innerHTML = content;
-//         toDo.appendChild(mySectionCard);
+        // toDo.appendChild(mySectionCard);
 //         action.target.parentElement.remove();
 //         savingToDoData()
 //         savingDoingData()
