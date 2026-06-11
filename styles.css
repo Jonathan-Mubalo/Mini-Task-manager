@@ -79,13 +79,14 @@ main h1 {
 
 main div {
   width: 30%;
-  min-width: 300px;
+  min-width: 200px;
   height: 300px;
   max-height: 450px;
   border: 2px solid var(--mylimegreen);
   border-radius: 15px;
   background-color: var(--myBlackGrey);
   overflow-y: scroll;
+  margin-top: 5px;
 }
 
 div::-webkit-scrollbar {
@@ -97,7 +98,7 @@ details::-webkit-scrollbar {
 }
 
 section {
-  margin: 2% auto;
+  margin: 4% auto;
   text-align: center;
   /* border: 2px solid midnightblue; */
   border-radius: 15px;
@@ -204,7 +205,7 @@ section p {
 
 .viewCard {
   position:fixed;
-  bottom: 50px;
+  top: 50px;
   left: 20%;
   right:20%;
   height: auto;
@@ -212,4 +213,30 @@ section p {
   opacity:1;
 }
 
-/* HELLO */
+@media screen and (max-width:650px){
+
+  main div {
+  width: 300px;
+  margin: 5px 5%;
+  height: 300px;
+  max-height: 450px;
+  border: 2px solid var(--mylimegreen);
+  border-radius: 15px;
+  background-color: var(--myBlackGrey);
+  overflow-y: scroll;
+}
+
+section {
+  margin: 4% auto;
+  width: 90%;
+}
+
+.viewCard {
+  position:fixed;
+  top: 20%;
+  left: 5%;
+  right:5%;
+  width: 90%;
+}
+
+}
